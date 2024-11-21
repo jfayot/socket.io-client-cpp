@@ -14,7 +14,7 @@ else()
   set(IS_ROOT_PROJECT OFF)
 endif()
 
-option(BUILD_TESTS "Build tests" ${IS_ROOT_PROJECT})
+option(BUILD_SIO_TESTS "Build tests" ${IS_ROOT_PROJECT})
 option(BUILD_SHARED_LIBS "Build the shared library" OFF)
 
 set(ALL_SRC
@@ -70,6 +70,7 @@ CPMAddPackage(
   VERSION 0.8.2
   URL https://github.com/zaphoyd/websocketpp/archive/refs/tags/0.8.2.zip
   OPTIONS
+  "ENABLE_CPP11 ON"
   "BUILD_TESTS OFF"
   "BUILD_EXAMPLES OFF"
 )
@@ -155,7 +156,7 @@ if(OPENSSL_FOUND)
   endif()
 endif()
 
-if(BUILD_TESTS)
+if(BUILD_SIO_TESTS)
   enable_testing()
   add_subdirectory(test)
 endif()
