@@ -16,9 +16,11 @@ Usage example:
   sio::client sio;
   sio.set_parser_msgpack();
 
+  std::string token = std::getenv("APP_TOKEN");
+
   sio.connect("http://localhost:3000/socket.io/", sio::message::from_json(
     {
-      {"token", "Bearer " + std::getenv("APP_TOKEN")}
+      { "token", "Bearer " + token }
     }
   ));
 
