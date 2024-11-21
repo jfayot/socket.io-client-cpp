@@ -160,10 +160,6 @@ if(BUILD_TESTS)
   add_subdirectory(test)
 endif()
 
-add_executable(check main.cpp)
-target_link_libraries(check PRIVATE sioclient)
-target_compile_features(check PRIVATE cxx_std_17)
-
 include(GNUInstallDirs)
 
 install(TARGETS sioclient sioclient_tls
