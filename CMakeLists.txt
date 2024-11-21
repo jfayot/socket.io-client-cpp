@@ -114,6 +114,13 @@ target_compile_features(sioclient
   cxx_std_17
 )
 
+target_compile_definitions(sioclient PRIVATE
+  -D_WEBSOCKETPP_CPP11_STL_
+  -D_WEBSOCKETPP_CPP11_FUNCTIONAL_
+  -D_WEBSOCKETPP_CPP11_TYPE_TRAITS_
+  -D_WEBSOCKETPP_CPP11_CHRONO_
+)
+
 if(BUILD_SHARED_LIBS)
   set_target_properties(sioclient PROPERTIES
     SOVERSION ${PROJECT_VERSION_MAJOR}
@@ -146,6 +153,13 @@ if(OPENSSL_FOUND)
   target_compile_features(sioclient_tls
     PRIVATE
     cxx_std_17
+  )
+
+  target_compile_definitions(sioclient_tls PRIVATE
+    -D_WEBSOCKETPP_CPP11_STL_
+    -D_WEBSOCKETPP_CPP11_FUNCTIONAL_
+    -D_WEBSOCKETPP_CPP11_TYPE_TRAITS_
+    -D_WEBSOCKETPP_CPP11_CHRONO_
   )
 
   if(BUILD_SHARED_LIBS)
