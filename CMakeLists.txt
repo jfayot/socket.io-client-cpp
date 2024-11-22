@@ -177,11 +177,19 @@ endif()
 
 include(GNUInstallDirs)
 
-install(TARGETS sioclient sioclient_tls
+install(TARGETS sioclient
   EXPORT sioclientTargets
   INCLUDES DESTINATION ${CMAKE_INSTALL_INCLUDEDIR}/sioclient
   ARCHIVE DESTINATION ${CMAKE_INSTALL_LIBDIR}/sioclient
 )
+
+if(OPENSSL_FOUND)
+  install(TARGETS sioclient_tls
+    EXPORT sioclientTargets
+    INCLUDES DESTINATION ${CMAKE_INSTALL_INCLUDEDIR}/sioclient
+    ARCHIVE DESTINATION ${CMAKE_INSTALL_LIBDIR}/sioclient
+  )
+endif()
 
 install(
   FILES
