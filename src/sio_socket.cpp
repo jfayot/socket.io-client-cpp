@@ -1,6 +1,6 @@
-#include "sio_socket.h"
-#include "internal/sio_packet.h"
-#include "internal/sio_client_impl.h"
+#include "sioclient/sio_socket.h"
+#include "sio_packet.h"
+#include "sio_client_impl.h"
 
 #include <asio/steady_timer.hpp>
 #include <asio/error_code.hpp>

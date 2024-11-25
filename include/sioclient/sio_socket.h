@@ -1,7 +1,7 @@
 #ifndef SIO_SOCKET_H
 #define SIO_SOCKET_H
 
-#include "sio_message.h"
+#include "sioclient/sio_message.h"
 
 #include <functional>
 

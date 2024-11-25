@@ -7,8 +7,8 @@
 #ifndef SIO_CLIENT_H
 #define SIO_CLIENT_H
 
-#include "sio_message.h"
-#include "sio_socket.h"
+#include "sioclient/sio_message.h"
+#include "sioclient/sio_socket.h"
 
 #include <string>
 #include <functional>

@@ -1,8 +1,8 @@
 #ifndef SIO_CLIENT_IMPL_H
 #define SIO_CLIENT_IMPL_H
 
-#include "sio_client.h"
-#include "internal/sio_packet.h"
+#include "sioclient/sio_client.h"
+#include "sio_packet.h"
 
 #ifdef _WIN32
 #define _WEBSOCKETPP_CPP11_THREAD_

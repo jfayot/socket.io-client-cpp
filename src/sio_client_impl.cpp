@@ -6,7 +6,7 @@
 //  Copyright (c) 2015 Melo Yao. All rights reserved.
 //
 
-#include "internal/sio_client_impl.h"
+#include "sio_client_impl.h"
 
 #include <functional>
 #include <sstream>

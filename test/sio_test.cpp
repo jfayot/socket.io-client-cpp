@@ -4,15 +4,16 @@
 //  Created by Melo Yao on 3/24/15.
 //
 
-#include <sio_client.h>
-#include <internal/sio_packet.h>
-#include <functional>
-#include <iostream>
-#include <thread>
+#include <sioclient/sio_client.h>
+#include <sio_packet.h>
 
 #include <catch2/catch_test_macros.hpp>
 
 #include <nlohmann/json.hpp>
+
+#include <functional>
+#include <iostream>
+#include <thread>
 
 using namespace sio;
 

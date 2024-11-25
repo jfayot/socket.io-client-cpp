@@ -4,7 +4,7 @@
 //  Created by Melo Yao on 3/22/15.
 //
 
-#include "internal/sio_packet.h"
+#include "sio_packet.h"
 
 #include <cassert>
 #include <iostream>
