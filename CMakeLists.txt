@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.18)
 
-set(version 3.2.1)
+set(version 3.2.2)
 
 PROJECT(sioclient
   VERSION ${version}

@@ -1,14 +1,10 @@
-  # "OPENSSL_CONFIGURE_OPTIONS no-shared\\\\;no-tests"
 CPMDeclarePackage(OpenSSL
   NAME openssl-cmake
   URL https://github.com/jimmy-park/openssl-cmake/archive/refs/tags/3.4.0.zip
   OPTIONS
-  "BUILD_SHARED_LIBS ON"
   "OPENSSL_TEST OFF"
   "OPENSSL_TARGET_VERSION 3.4.0"
   "OPENSSL_INSTALL ON"
-  "OPENSSL_CONFIGURE_OPTIONS --prefix=${CMAKE_INSTALL_PREFIX}"
-  EXCLUDE_FROM_ALL YES
 )
 
 CPMDeclarePackage(asio
@@ -35,7 +31,6 @@ CPMDeclarePackage(json
   URL https://github.com/nlohmann/json/archive/refs/tags/v3.11.3.zip
   OPTIONS
   "JSON_Install ON"
-  EXCLUDE_FROM_ALL YES
 )
 
 CPMDeclarePackage(Catch2
